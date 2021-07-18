@@ -1,0 +1,35 @@
+body {
+	font-family: Calibri, Helvetica, sans-serif;
+	background: #fff url(../images/bg.jpg) repeat top left;
+}
+
+input {
+	width: 250px;
+}
+
+header, h1, h2, h3 {
+	text-align: center;
+}
+
+hr {
+	margin-bottom: 25px;
+}
+
+.item1 {
+	grid-area: button;
+}
+
+.item2 {
+	grid-area: title;
+}
+
+.item3 {
+	grid-area: sidebuttons;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-areas: 'button title sidebuttons';
+	grid-template-columns: 80% 150% 40%;
+	padding: 10px;
+}
